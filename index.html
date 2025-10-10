@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Rose Beauty Parlour - Elegance • Style • Confidence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Falling Rose Petals Animation -->
+    <div class="falling-petals" id="falling-petals">
+        <!-- Test petals - these should be visible immediately -->
+        <div class="rose-petal test-petal" style="left: 50px; top: 50px; background: red; opacity: 1; animation: none;"></div>
+        <div class="rose-petal test-petal" style="left: 150px; top: 80px; background: blue; opacity: 1; animation: none;"></div>
+        <div class="rose-petal test-petal" style="left: 250px; top: 110px; background: green; opacity: 1; animation: none;"></div>
+        <div class="rose-petal test-petal" style="left: 350px; top: 140px; background: yellow; opacity: 1; animation: none;"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-rose"></i>
+                <span class="logo-text">White Rose</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">
+                <span class="main-title">White Rose</span>
+                <span class="subtitle">Beauty Parlour</span>
+            </h1>
+            <p class="hero-tagline animate-fade-in-delay">Elegance • Style • Confidence</p>
+            <button class="discover-btn animate-fade-in-delay-2" onclick="scrollToSection('about')">
+                Discover More
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-fade-left">
+                    <h2>About White Rose Beauty Parlour</h2>
+                    <p>At White Rose Beauty Parlour, we believe that beauty is more than just appearance—it's about feeling confident, elegant, and comfortable in your own skin.</p>
+                    <p>Our sanctuary of style combines professional expertise with premium care, creating an experience that rejuvenates both body and spirit. Every service is crafted to bring out your natural radiance.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item animate-fade-right">
+                            <i class="fas fa-star"></i>
+                            <span>Premium Quality Products</span>
+                        </div>
+                        <div class="highlight-item animate-fade-right">
+                            <i class="fas fa-heart"></i>
+                            <span>Personalized Care</span>
+                        </div>
+                        <div class="highlight-item animate-fade-right">
+                            <i class="fas fa-clock"></i>
+                            <span>Flexible Appointments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-fade-right">
+                    <img src="images/about-salon.jpg" alt="White Rose Beauty Parlour Interior" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card animate-fade-up" data-service="haircut">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Haircut & Styling</h3>
+                    <p>Refresh your look with professional cuts and styling that enhance your natural beauty</p>
+                    <div class="service-glow"></div>
+                </div>
+                
+                <div class="service-card animate-fade-up" data-service="facial">
+                    <div class="service-icon">
+                        <i class="fas fa-face-smile"></i>
+                    </div>
+                    <h3>Facial Treatments</h3>
+                    <p>Glow naturally with our rejuvenating facial treatments tailored to your skin type</p>
+                    <div class="service-glow"></div>
+                </div>
+                
+                <div class="service-card animate-fade-up" data-service="spa">
+                    <div class="service-icon">
+                        <i class="fas fa-flower"></i>
+                    </div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Indulge in relaxing spa treatments that melt away stress and restore harmony</p>
+                    <div class="service-glow"></div>
+                </div>
+                
+                <div class="service-card animate-fade-up" data-service="makeup">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Makeup Artistry</h3>
+                    <p>Transform your look with professional makeup for any occasion or celebration</p>
+                    <div class="service-glow"></div>
+                </div>
+                
+                <div class="service-card animate-fade-up" data-service="mehndi">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Mehndi Design</h3>
+                    <p>Adorn your hands with intricate, beautiful mehndi designs for special occasions</p>
+                    <div class="service-glow"></div>
+                </div>
+                
+                <div class="service-card animate-fade-up" data-service="tattoo">
+                    <div class="service-icon">
+                        <i class="fas fa-ink-pen"></i>
+                    </div>
+                    <h3>Tattoo Studio</h3>
+                    <p>Express yourself with custom tattoo designs created by skilled artists</p>
+                    <div class="service-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Our Work</h2>
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <div class="gallery-item animate-fade-in">
+                        <div class="gallery-image">
+                            <img src="images/hair-styling.jpg" alt="Expert Hair Styling" class="gallery-img">
+                            <span>Expert Hair Styling</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-fade-in">
+                        <div class="gallery-image">
+                            <img src="images/skin-treatments.jpg" alt="Radiant Skin Treatments" class="gallery-img">
+                            <span>Radiant Skin Treatments</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-fade-in">
+                        <div class="gallery-image">
+                            <img src="images/spa-experience.jpg" alt="Luxury Spa Experience" class="gallery-img">
+                            <span>Luxury Spa Experience</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-fade-in">
+                        <div class="gallery-image">
+                            <img src="images/makeup-artistry.jpg" alt="Professional Makeup" class="gallery-img">
+                            <span>Professional Makeup</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-fade-in">
+                        <div class="gallery-image">
+                            <img src="images/mehndi-art.jpg" alt="Beautiful Mehndi Art" class="gallery-img">
+                            <span>Beautiful Mehndi Art</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-fade-in">
+                        <div class="gallery-image">
+                            <img src="images/tattoo-designs.jpg" alt="Custom Tattoo Designs" class="gallery-img">
+                            <span>Custom Tattoo Designs</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="gallery-btn gallery-btn-prev" onclick="scrollGallery('prev')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="gallery-btn gallery-btn-next" onclick="scrollGallery('next')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Why Choose White Rose</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Professional Stylists</h3>
+                    <p>Our certified stylists bring years of experience and artistic vision to every service</p>
+                    <div class="feature-glow"></div>
+                </div>
+                
+                <div class="feature-card animate-fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Premium Products</h3>
+                    <p>We use only the finest, salon-grade products that nourish and enhance your natural beauty</p>
+                    <div class="feature-glow"></div>
+                </div>
+                
+                <div class="feature-card animate-fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-flower"></i>
+                    </div>
+                    <h3>Relaxing Ambience</h3>
+                    <p>Step into our serene space designed for ultimate relaxation and comfort</p>
+                    <div class="feature-glow"></div>
+                </div>
+                
+                <div class="feature-card animate-fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Customer-Centered Care</h3>
+                    <p>Your satisfaction and comfort are our top priorities in every interaction</p>
+                    <div class="feature-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item animate-fade-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>82488 50912</p>
+                            <p>77085 04700 (WhatsApp)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item animate-fade-left">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Follow Us</h3>
+                            <p>@white_roseparlour</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item animate-fade-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>180 I, Sevalpatti South Street,<br>Madurai Road, Senthur Pipes Near,<br>Rajapalayam - 626117</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-visual animate-fade-right">
+                    <div class="contact-rose">
+                        <i class="fas fa-rose"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 White Rose Beauty Parlour. All rights reserved. | Elegance • Style • Confidence</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
