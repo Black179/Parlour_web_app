@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://parlour-web-app.vercel.app/sitemap.xml
